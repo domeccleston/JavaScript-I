@@ -17,15 +17,18 @@ const example = {
   gender: "F",
 }
 
-// Write your intern objects here:
+// Constructor function to generate interns:
 
-const intern1 = {
-  id: 1,
-  name: "Mitzi",
-  email: "mmelloy@psu.edu",
-  gender: "M",
+function Intern(id, name, email, gender) {
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  this.gender = gender;
 }
-const intern2 = {
+
+let intern_mitzi = new Intern(1, "Mitzi", "mmelloy@psu.edu", "M");
+
+const intern_kennan = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
@@ -34,19 +37,19 @@ const intern2 = {
     return "Hello, my name is " + this.name + "!"
   }
 }
-const intern3 = {
+const intern_keven = {
   id: 3,
   name: "Keven",
   email: "kmummery2@wikimedia.org",
   gender: "M",
 }
-const intern4 = {
+const intern_gannie = {
   id: 4,
   name: "Gannie",
   email: "gmartinson3@illinois.edu",
   gender: "M",
 }
-const intern5 = {
+const intern_antoinetta = {
   id: 5,
   name: "Antoinetta",
   email: "adaine5@samsung.com",
@@ -61,30 +64,30 @@ const intern5 = {
 
 // Mitzi's name
 
-console.log(intern1.name);
+console.log(intern_mitzi.name);
 
 // Kennan's ID
 
-console.log(intern2.id);
+console.log(intern_kennan.id);
 
 // Keven's email
 
-console.log(intern3.email);
+console.log(intern_keven.email);
 
 // Gannie's name
 
-console.log(intern4.name);
+console.log(intern_gannie.name);
 
 // Antonietta's Gender
 
-console.log(intern5.gender);
+console.log(intern_antoinetta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+console.log(intern_kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(intern_antoinetta.multiplyNums(4,3))
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
